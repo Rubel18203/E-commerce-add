@@ -12,10 +12,10 @@ class usersController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function Addproduct(){
+    public function index(){
     
         
-            return view('Add_product');
+           // return view('Add_product');
         }
 
     /**

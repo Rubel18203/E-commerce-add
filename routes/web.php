@@ -20,4 +20,5 @@ Route::get('/Register',function(){
 });
 Route::resource('/products',ProductsController::class);
 Route::resource('/users',usersController::class);
-Route::get('/Add_product',[usersController::class,'Addproduct']);
+Route::get('/Add_product',[ProductsController::class,'Addproduct']);
+//Route::get('/showdata',[ProductsController::class,'showdata']);

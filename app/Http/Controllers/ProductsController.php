@@ -10,7 +10,7 @@ class ProductsController extends Controller
     
     public function index()
     {
-        return'i love bangladesh';
+        //return'i love bangladesh';
     }
 
     /**
@@ -18,9 +18,11 @@ class ProductsController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
+    public function Addproduct()
+
     {
-        //
+       // $product =products::all();
+       return view('Add_product');
     }
 
     /**
@@ -50,6 +52,8 @@ class ProductsController extends Controller
         
         $products->save(); 
         return redirect()->back();
+
+
         
     }
 
@@ -59,9 +63,10 @@ class ProductsController extends Controller
      * @param  \App\Models\Products  $products
      * @return \Illuminate\Http\Response
      */
-    public function show(Products $products)
+    public function showdata(Products $products)
     {
-        //
+       // $product =products::all();
+        return view('admin');
     }
 
     /**
